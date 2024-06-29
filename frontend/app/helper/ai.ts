@@ -18,7 +18,7 @@ export const fetchCoverLetter = async (message: string, profile: object) => {
     }
     console.log('trying to get user data');
     const data = await response.text();
-    console.log(data);
+    console.log("hello", data);
     return data;
   } catch (error) {
     console.error('Error fetching cover letter:', error);

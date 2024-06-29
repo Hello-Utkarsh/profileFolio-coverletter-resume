@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function UserResume() {
   return (
-    <div className="w-full max-w-6xl mx-auto py-4 md:py-4 lg:py-4">
+    <div className="w-full max-w-6xl pl-3 py-4 md:py-4 lg:py-4">
       <h2 className="text-3xl font-bold tracking-tight mb-8 md:mb-10 lg:mb-12">My Collection</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-12">
         <div>

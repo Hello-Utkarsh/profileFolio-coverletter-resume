@@ -59,9 +59,9 @@ const Dashboard = () => {
         <RadialProfileCard />
         <div className="w-9/12 mx-2 flex flex-col">
           <Card>
-            <CardHeader>
+            <CardHeader className='p-4'>
               <CardTitle>Fun fact from your Profile</CardTitle>
-              <CardContent>You Are 5% Likely To Be Replaced By AI</CardContent>
+              <CardContent className='p-0'>You Are 5% Likely To Be Replaced By AI</CardContent>
             </CardHeader>
           </Card>
           <div className="grid grid-cols-2 gap-1 my-2">
@@ -69,11 +69,11 @@ const Dashboard = () => {
               <>
                 <div key={index} className="rounded-lg py-1 px-1">
                   <Card>
-                    <CardHeader>
+                    <CardHeader className='py-2'>
                       <CardTitle>{card.name}</CardTitle>
                       <CardDescription>{card.description}</CardDescription>
                     </CardHeader>
-                    <CardFooter>
+                    <CardFooter className='pb-3'>
                       <Dialog>
                         <DialogTrigger>{card.dialogTrigger}</DialogTrigger>
 

@@ -9,16 +9,16 @@ import { getUserData } from '../actions/user-actions';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 export default function CoverLetter() {
-  const [description, setDescription] = useState('');
-  const [coverLetter, setCoverLetter] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [description, setDescription]: any = useState('');
+  const [coverLetter, setCoverLetter]: any = useState([]);
+  const [isLoading, setIsLoading]: any = useState(false);
 
   const handleFetchCoverLetter = async () => {
     setIsLoading(true);
     console.log('the message is', coverLetter);
     const profile = await getUserData();
     console.log(profile);
-    let letter = await fetchCoverLetter(description, profile);
+    let letter: any = await fetchCoverLetter(description, profile);
 
     let coverLetterArray = letter.split('\\n');
     console.log('array', coverLetterArray);
@@ -46,7 +46,7 @@ export default function CoverLetter() {
         <h2 className="text-2xl font-bold">Your Cover Letter</h2>
 
         <div className="prose text-muted-foreground">
-          <ScrollArea className="h-[500px] w-[400px] rounded-md border p-4">
+          <ScrollArea className="h-[250px] w-full rounded-md border p-4">
             {isLoading ? (
               <div>loading....</div>
             ) : (
@@ -85,7 +85,7 @@ export default function CoverLetter() {
   );
 }
 
-function CopyIcon(props) {
+function CopyIcon(props: any) {
   return (
     <svg
       {...props}
@@ -105,7 +105,7 @@ function CopyIcon(props) {
   );
 }
 
-function DownloadIcon(props) {
+function DownloadIcon(props: any) {
   return (
     <svg
       {...props}

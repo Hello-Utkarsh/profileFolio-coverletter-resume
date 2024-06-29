@@ -18,14 +18,14 @@ const RadialProfileCard = () => {
   return (
     <div className="flex flex-col w-2/12 mx-2 mr-3">
       <Card>
-        <CardHeader>
+        <CardHeader className='py-4'>
           <CardTitle>Hey Suyash</CardTitle>
           <CardDescription>Card Description</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className='pb-4'>
           <div className="flex flex-col outline-1 w-full">
-            <div className="h-fit w-56 relative flex flex-col py-5 items-center bg-slate-100 rounded-xl">
-              <div className="relative w-32 h-32 flex justify-center items-center">
+            <div className="h-fit relative flex flex-col items-cente rounded-xl">
+              <div className="relative w-36 h-36 flex justify-center items-center mx-auto">
                 <div className="photo flex justify-center items-center">
                   <img
                     className="w-[90%] h-[90%] rounded-full"
@@ -57,10 +57,10 @@ const RadialProfileCard = () => {
             </div>
           </div>
         </CardContent>
-        <CardFooter className="flex flex-col gap-3">
-          <Button variant="destructive">warning 80% almost there &gt;</Button>
+        <CardFooter className="flex flex-col gap-3 items-center mx-auto px-2">
+          <Button className='w-full' variant="destructive">warning 80% almost there &gt;</Button>
 
-          <Button>
+          <Button className='w-full'>
             <span className="material-symbols-outlined mr-2">link</span>Get Profile Link
           </Button>
         </CardFooter>
