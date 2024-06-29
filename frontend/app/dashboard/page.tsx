@@ -10,7 +10,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
-import CoverLetter from '../coverLetter/page';
+import CoverLetter from '../components/cover-letter';
 
 const Dashboard = () => {
   return (
